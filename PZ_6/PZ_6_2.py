@@ -5,11 +5,11 @@ import random
 
 
 def unique(listarr):
-    n = len(a)
+    n = len(listarr)
     i = 1
     count = 1
     while i < n:
-        if a[i] != a[i-1]:
+        if listarr[i] != listarr[i-1]:
             count += 1
         i += 1
     return count

@@ -6,14 +6,14 @@ import random
 
 def sorting(listarr):
     num = []
-    n = len(a)
+    n = len(listarr)
     i = 0
     while i < n//2:
-        num.append(a[i])
-        num.append(a[n - i - 1])
+        num.append(listarr[i])
+        num.append(listarr[n - i - 1])
         i += 1
     if n % 2 != 0:
-        num.append(a[n // 2])
+        num.append(listarr[n // 2])
     return num
 
 

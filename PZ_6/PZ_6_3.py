@@ -5,12 +5,12 @@ import random
 
 
 def shift(listarr):
-    n = len(arr)
+    n = len(listarr)
     i = 0
     while i < n-1:
-        arr[i], arr[i+1] = arr[i+1], arr[i]
+        listarr[i], listarr[i+1] = listarr[i+1], listarr[i]
         i += 1
-    return arr
+    return listarr
 
 
 N = input("Введите размер списка: ")
