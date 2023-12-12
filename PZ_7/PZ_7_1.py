@@ -12,6 +12,5 @@ for char in text:
         elif 'а' <= char <= 'я' or 'А' <= char <= 'Я':
             cyrillic_count += 1
 
-S = latin_count + cyrillic_count
 print("Общее количество латинских букв:", latin_count)
 print("Общее количество русских букв:", cyrillic_count)
