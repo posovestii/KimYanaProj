@@ -2,8 +2,8 @@
 import random
 # -*- coding: utf-8 -*-
 
-
-matrix = [[random.randint(-10, 10) for _ in range(3)] for _ in range(3)]
+N = int(input("Введите размерность матрицы: "))
+matrix = [[random.randint(-10, 10) for el in range(N)] for row in range(N)]
 print("Исходная матрица:")
 for row in matrix:
     print(row)
