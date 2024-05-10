@@ -6,7 +6,7 @@ class Bank:
         self.balance = balance
         self.interest_rate = interest_rate
 
-    def calculate_interest(self, time_period):
+    def calc_interest(self, time_period):
         interest = self.balance * (self.interest_rate / 100) * time_period
         return interest
 
@@ -23,7 +23,7 @@ print(f"Текущий баланс: {my_bank.balance:.2f} руб.")
 
 
 time_p = int(input("Введите период вложения: "))
-interest_earned = my_bank.calculate_interest(time_p)
+interest_earned = my_bank.calc_interest(time_p)
 print(f"Начисленные проценты за {time_p} года: {interest_earned:.2f} руб.")
 
 try:

@@ -12,7 +12,7 @@ class Bank:
         self.time_period = time_period
         self.amount = amount
 
-    def calculate_interest(self):
+    def calc_interest(self):
         interest = self.balance * (self.interest_rate / 100) * self.time_period
         return interest
 
@@ -42,6 +42,6 @@ they_bank = [bank1, bank2, bank3]
 save_def(they_bank, 'they_bank.pkl')
 loaded_they_bank = load_def('they_bank.pkl')
 for banks in loaded_they_bank:
-    print(f"Начисленные проценты: {banks.calculate_interest():.2f} руб.")
+    print(f"Начисленные проценты: {banks.calc_interest():.2f} руб.")
     print("Новый баланс после снятия:", banks.withdraw())
     print()
